@@ -1,0 +1,67 @@
+-- Create the agriculture database
+USE agriculture;
+
+-- Create the users table
+CREATE TABLE IF NOT EXISTS users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    phone VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    role VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create the users table CREATE TABLE IF NOT EXISTS 
+--users ( user_id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(255) NOT NULL, 
+--phone VARCHAR(255) NOT NULL, address VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, 
+--email VARCHAR(255) NOT NULL, role VARCHAR(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP );
+
+-- Create the products table
+CREATE TABLE IF NOT EXISTS products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    farmer_name VARCHAR(255) NOT NULL,
+    price int NOT NULL,
+    description TEXT,
+    pimage varchar(255) NOT NULL,
+    quantity_in_stock INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create the products table CREATE TABLE IF NOT EXISTS 
+--products ( product_id INT AUTO_INCREMENT PRIMARY KEY, product_name VARCHAR(255) NOT NULL, 
+--farmer_name VARCHAR(255) NOT NULL, price int NOT NULL, description TEXT, pimage varchar(255) NOT NULL, 
+--quantity_in_stock INT NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP );
+
+-- Create the orders table
+CREATE TABLE IF NOT EXISTS orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (username) REFERENCES users(username)
+);
+
+-- Create the orders table CREATE TABLE IF NOT EXISTS 
+--orders ( order_id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(255) NOT NULL, 
+--user_id INT, order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(user_id) );
+
+
+-- Create the my_cart table
+CREATE TABLE IF NOT EXISTS myCart (
+    cart_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    product_name VARCHAR(255) NOT NULL,
+    quantity_in_stock INT NOT NULL,
+    pimage varchar(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (username) REFERENCES users(username),
+    FOREIGN KEY (product_name) REFERENCES products(product_name)
+);
+
+-- Create the my_cart table CREATE TABLE IF NOT EXISTS 
+--myCart ( cart_id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(255) NOT NULL, 
+--product_name VARCHAR(255) NOT NULL, quantity_in_stock INT NOT NULL, pimage varchar(255) NOT NULL, 
+--user_id INT, product_id INT, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
+--FOREIGN KEY (user_id) REFERENCES users(user_id), FOREIGN KEY (product_id) REFERENCES products(product_id) );

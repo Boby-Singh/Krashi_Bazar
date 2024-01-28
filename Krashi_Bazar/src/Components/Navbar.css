@@ -1,0 +1,93 @@
+:root {
+    --font_color: white;
+    --b_g: rgb(61, 60, 60);
+    --Nav_color: black;
+    --Nav_bg: white;
+}
+
+body {
+    margin: 2px;
+    padding: 0;
+}
+
+.navbar_Head {
+    background-color: var(--b_g);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.Heading_h1 {
+    color: var(--font_color);
+}
+
+.Heading_p1 {
+    color: var(--font_color);
+}
+
+.navbar_list_Head {
+    display: flex;
+    gap: 40px;
+}
+
+.Heading {
+    padding-top: 0%;
+    text-align: center;
+    float: right;
+    margin-left: 150px;
+}
+
+.Heading h1 {
+    margin: 0;
+}
+
+.navbar {
+    background-color: var(--Nav_bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar.active {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    color: white !important;
+    background-color: rgb(31, 31, 31, 0.9);
+}
+
+.navbar.active:hover {
+    color: brown;
+}
+
+select {
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 550;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar_list {
+    list-style: none;
+    display: flex;
+}
+
+hr {
+    width: 80%;
+    border-color: rgb(5, 246, 85);
+}
+
+a {
+    /* color: var(--Nav_color); */
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+a:hover {
+    color: brown;
+}

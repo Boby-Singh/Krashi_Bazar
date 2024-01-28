@@ -1,0 +1,112 @@
+.Cart_container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: aliceblue;
+    position: relative;
+    overflow: hidden;
+}
+
+.Cart_heading {
+    display: flex;
+    font-size: 22px;
+    justify-content: space-between;
+}
+
+.Total_amt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #04AA6D;
+    border: 5px ridge #ddd;
+    display: inline-block;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Check_btn {
+    background-color: aqua;
+}
+
+.Check_btn:hover {
+    background-color: darkcyan;
+}
+
+.Clear_btn {
+    background-color: blue;
+}
+
+.Clear_btn:hover {
+    background-color: red;
+}
+
+.table_Content {
+    font-size: 25px;
+    font-weight: 500;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
+#customers td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: black;
+}
+
+.styles_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    border: 0.5px ridge gray;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.styles_icon {
+    background-color: grey;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.styles_count {
+    padding: 8px;
+}

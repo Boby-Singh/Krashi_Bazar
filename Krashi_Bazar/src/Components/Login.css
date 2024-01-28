@@ -1,0 +1,74 @@
+:root {
+    --font_color: white;
+    --b_g: black;
+    --input: rgb(116, 114, 114);
+}
+
+
+/* src/App.css */
+
+.Head {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.log_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--b_g);
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.registration-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--font_color);
+}
+
+input {
+    color: var(--input);
+    padding: 8px;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+p {
+    color: var(--font_color);
+}
+
+button {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 8px;
+    background-color: #4caf50;
+    color: var(--font_color);
+    border: none;
+    cursor: pointer;
+}
+
+.Errors {
+    color: red;
+}

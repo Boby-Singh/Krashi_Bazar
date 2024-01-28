@@ -1,0 +1,23 @@
+.Container_Mess {
+    align-items: start;
+    text-align: start;
+    justify-content: start;
+    width: auto;
+    margin: 20px;
+}
+
+h1 {
+    color: blue;
+}
+
+.Cont_heading {
+    display: flex;
+}
+
+.go_back_btn {
+    font-size: 22px;
+    color: brown;
+    background-color: white;
+    margin-left: 50%;
+    margin-top: 25px;
+}

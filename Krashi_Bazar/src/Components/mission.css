@@ -1,0 +1,32 @@
+.Container_mission {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    margin: 20px;
+    padding: 20px;
+}
+
+.Cont_heading {
+    display: flex;
+}
+
+.mis_go_back_btn {
+    font-size: 22px;
+    color: brown;
+    background-color: white;
+    margin-left: 70%;
+    margin-top: 25px;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    color: rgb(55, 54, 54);
+}

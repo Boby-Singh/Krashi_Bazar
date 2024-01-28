@@ -1,0 +1,46 @@
+.Container_about {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    padding: 20px;
+}
+
+.Cont_heading {
+    display: flex;
+}
+
+.ab_go_back_btn {
+    font-size: 22px;
+    color: brown;
+    background-color: rgb(26, 23, 23);
+    margin: 25px auto 25px 70%;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: start;
+    text-decoration: underline;
+    color: blue;
+}
+
+.content {
+    padding: auto;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    width: 95%;
+    font-size: 22px;
+    font-weight: 500;
+    overflow-x: hidden;
+    padding: 10px 30px 10px 10px;
+}
+
+hr {
+    width: 80%;
+    border-color: rgb(5, 246, 85);
+    overflow-x: hidden;
+}

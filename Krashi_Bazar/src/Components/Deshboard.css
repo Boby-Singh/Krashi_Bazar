@@ -1,0 +1,26 @@
+/* GridContainer.css */
+
+.Header_title {
+    color: black !important;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 16px;
+    height: 100vh;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: start;
+    background-color: rgb(50, 99, 50);
+}
+
+.List-item {
+    color: white;
+    list-style: none;
+    margin-bottom: 25px;
+}
