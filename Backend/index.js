@@ -22,6 +22,9 @@ const db = require('./db'),
     user = require('./auth.router/auth.router.Routers')
 app.use('/user', user);
 
+app.get('/home', (req, res)=>{
+    res.json('Hello')
+})
 
 
 const PORT = process.env.PORT || 3000;
